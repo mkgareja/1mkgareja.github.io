@@ -2,7 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
+<link rel="manifest" href="/manifest.json">
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async></script>
+<script>
+var OneSignal = window.OneSignal || [];
+OneSignal.push(["init", {
+  appId: "df044df4-6497-465a-a1b4-10377f02b7cd",
+  autoRegister: false,
+  notifyButton: {
+    enable: true /* Set to false to hide */
+  }
+}]);
+</script>
 <!-- Meta -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
